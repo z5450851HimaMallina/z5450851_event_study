@@ -22,8 +22,8 @@
 # Create import statements so that the module config.py and util.py (inside the project2 package)
 # are imported as "cfg", and "util"
 #
-
-
+from project2 import config as cfg
+from project2 import util
 
 
 import pandas as pd
