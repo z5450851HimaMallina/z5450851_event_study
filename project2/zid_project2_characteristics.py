@@ -5,7 +5,7 @@
 # ----------------------------------------------------------------------------
 # Part 5.1: import needed modules
 # ----------------------------------------------------------------------------
-# Create import statements to import all modules you need in this script
+# Create import statements to import all modules needed for this script
 
 #       For details, review the import statements in zid_project2_main.py
 
