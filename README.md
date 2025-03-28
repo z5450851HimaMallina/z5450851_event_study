@@ -1,0 +1,69 @@
+## Combining Data from Multiple Sources
+Finance data often requires assembling datasets from various sources especially when dealing with stock prices.
+![image](https://github.com/user-attachments/assets/4362bcd5-bdba-4e34-a79e-f1896f1954c5)
+
+
+## Project Objective
+The goal of this project is to develop the foundational skills necessary for data acquisition, cleaning, and merging. , and in this project, I had to combine stock price data distributed across multiple files. The output will be a single JSON file containing the combined data.
+
+This project will helpful to test the following skills
+	-Handling different file formats and structures
+	-Writing general code that can adapt to different file formats and sources
+	-Importing, cleaning, and merging data
+	-Using Python functions to read and process large data files
+	-Storing the combined data in JSON format for further analysis
+
+Files Included
+	•	project_desc.pdf: Provides additional project details and instructions.
+  •	README.txt: This file, which explains the project.
+	•	TICKERS.txt: Contains a list of tickers and their corresponding exchanges.
+	•	zid_project1.py: Contains all the functions that are required to complete this project. You will need to implement specific parts of this file.
+	•	data/: Contains multiple .dat files with stock price data for various tickers. Each ticker from TICKERS.txt will have a corresponding .dat file.
+
+## Workflow
+
+#### Step 1: Setting the location of files and folders
+
+Setting the correct paths for the project folder, data sub-folder, and TICKERS.txt file using the os module to ensure the code works on different systems.
+
+#### Step 2: Defining Source Data Format
+
+Define the column names and widths for the source data files based on the README.txt file. This will help in extracting the correct data fields from the .dat files.
+
+#### Step 3: Implement the get_tics function
+
+Writing a function that reads the TICKERS.txt file, formats the tickers, and returns a list of tickers.
+
+#### Step 4: Implement the read_dat function
+
+Writing a function that reads a stock price data file for a given ticker and returns its contents as a list of lines.
+
+#### Step 5: Implement the line_to_dict function
+
+Writing a function that converts a single line of data from the .dat file into a dictionary, mapping the column names to their values.
+
+#### Step 6: Implement the verify_tickers function
+
+Writing a function that verifies if the tickers provided are valid by checking them against the dictionary returned by get_tics.
+
+#### Step 7: Implement the verify_cols function
+
+Writing a function that verifies the column names against the predefined COLUMNS list and raises an exception if any of the columns are invalid.
+
+#### Step 8: Implement the create_data_dict function
+
+Writing a function that combines the data from multiple .dat files into a single dictionary, where each ticker has its own data.
+
+#### Step 9: Implement the create_json function
+
+Writing a function that saves the combined data dictionary into a JSON file.
+
+#### Step 10: Evaluation and Analysis
+
+Provided an analysis explaining how stock returns can be influenced by journalists’ articles, and discuss the relationship between the short-run predictability of trading volume and stock returns.
+
+
+## Contact
+For inquiries or collaborations, feel free to connect with me on [www.linkedin.com/in/himarohinimallina] or check out more of my work on (https://github.com/z5450851HimaMallina).
+
+Thank you
