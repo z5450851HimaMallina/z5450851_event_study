@@ -2,7 +2,8 @@
 ### Project-1: Combining Data from Multiple Sources
 Finance data often requires assembling datasets from various sources especially when dealing with stock prices.
 
-![image](https://github.com/user-attachments/assets/4362bcd5-bdba-4e34-a79e-f1896f1954c5)
+<img width="520" alt="image" src="https://github.com/user-attachments/assets/4af33ff0-e882-4384-a59b-a13c30cd0ffb" />
+
 
 ## Project Overview
 This project is designed to help combine stock price information from multiple sources by creating a robust and flexible data acquisition, cleaning, and merging pipeline in Python.
