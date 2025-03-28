@@ -8,14 +8,6 @@ import toolkit_config as cfg
 
 # ----------------------------------------------------------------------------
 # Location of files and folders
-# Instructions:
-#   - Replace the '<COMPLETE THIS PART>' strings with the appropriate
-#   expressions.
-# IMPORTANT:
-#   - Use the appropriate method from the `os` module to combine paths
-#   - Do **NOT** include full paths like "C:\\User...". You **MUST* combine
-#     paths using methods from the `os` module
-#   - See the assessment description for more information
 # ----------------------------------------------------------------------------
 PRJDIR = os.path.join(os.path.expanduser('~'), 'PycharmProjects', 'toolkit')
 ROOTDIR = os.path.join(PRJDIR, 'project1')
@@ -23,27 +15,22 @@ DATDIR = os.path.join(ROOTDIR, 'data')
 TICPATH = os.path.join(ROOTDIR, 'TICKERS.txt')
 # ----------------------------------------------------------------------------
 # Variables describing the contents of ".dat" files
-# Instructions:
-#   - Replace the '<COMPLETE THIS PART>' string with the appropriate
-#     expression.
-#   - See the assessment description for more information
 # ----------------------------------------------------------------------------
-# NOTE: `COLUMNS` must be a list, where each element is a column name in the
+# NOTE: `COLUMNS` is a list, where each element is a column name in the
 # order they appear in the ".dat" files
 COLUMNS = ['Volume', 'Date', 'Adj Close', 'Close', 'Open', 'High']
 
-# NOTE: COLWIDTHS must be a dictionary with {<col> : <width>}, where
+# NOTE: COLWIDTHS is a dictionary with {<col> : <width>}, where
 # - Each key (<col>) is a column name in the `COLUMNS` list
 # - Each value (<width>) is an **integer** with the width of the column, as
-#   defined in your README.txt file
+#   defined in the README.txt file
 #
 COLWIDTHS = {'Volume': 14, 'Date': 11, 'Adj Close': 19, 'Close': 10, 'Open': 6, 'High': 20}
 # ----------------------------------------------------------------------------
-#   Please complete the body of this function, so it matches its docstring
-#   description. See the assessment description file for more information.
+#   Functions
 # ----------------------------------------------------------------------------
 def get_tics(pth):
-    """ Reads a file containing tickers and their corresponding exchanges.
+    """ OnjectiveReads a file containing tickers and their corresponding exchanges.
         Each non-empty line of the file is guaranteed to have the following format:
 
         "XXXX"="YYYY"
@@ -106,10 +93,8 @@ if __name__ == "__main__":
     tics = get_tics(pth)
     print(tics)
 
-# ----------------------------------------------------------------------------
-#   Please complete the body of this function so it matches its docstring
-#   description. See the assessment description file for more information.
-# ----------------------------------------------------------------------------
+#function
+
 def read_dat(tic):
     """ Returns a list with the lines of the ".dat" file containing the stock
     price information for the ticker `tic`.
@@ -145,10 +130,9 @@ def read_dat(tic):
     element = [line.strip() for line in element]
 
     return element
-# ----------------------------------------------------------------------------
-#   Please complete the body of this function so it matches its docstring
-#   description. See the assessment description file for more information.
-# ----------------------------------------------------------------------------
+
+#function
+
 def line_to_dict(line):
     """Returns the information contained in a line of a ".dat" file as a
     dictionary, where each key is a column name and each value is a string
@@ -212,10 +196,9 @@ for filename, data in all_data.items():
     for i in data[:5]:
         print(i)
     print("\n")
-# ----------------------------------------------------------------------------
-#   Please complete the body of this function so it matches its docstring
-#   description. See the assessment description file for more information.
-# ----------------------------------------------------------------------------
+
+#function
+
 def verify_tickers(tic_exchange_dic, tickers_lst=None):
     """Verifies if the tickers provided are valid according to the rules provided in the Notes.
         If a rule is broken, this function should raise an Exception.
@@ -270,10 +253,8 @@ if __name__ == "__main__":
     except Exception as e:
         print(e)
 
-# ----------------------------------------------------------------------------
-#   Please complete the body of this function so it matches its docstring
-#   description. See the assessment description file for more information.
-# ----------------------------------------------------------------------------
+#function
+
 def verify_cols(col_lst=None):
     """Verifies if the column names provided are valid according to the rules provided in the Notes.
         If a rule is broken, this function should raise an Exception.
@@ -321,10 +302,8 @@ if __name__ == "__main__":
     except Exception as e:
         print(e)
 
-# ----------------------------------------------------------------------------
-#   Please complete the body of this function so it matches its docstring
-#   description. See the assessment description file for more information.
-# ----------------------------------------------------------------------------
+#function
+
 def read_dat(ticker):
     """Reads the .dat file for the given ticker and returns the lines."""
     file_path = os.path.join(DATDIR, f"{ticker}_prc.dat")  # Updated to match file naming convention
@@ -445,10 +424,8 @@ if __name__ == "__main__":
     data_dict = create_data_dict(tic_exchange_dic, tickers_lst, col_lst)
     print(data_dict)
 
-# ----------------------------------------------------------------------------
-#   Please complete the body of this function so it matches its docstring
-#   description. See the assessment description file for more information.
-# ----------------------------------------------------------------------------
+#function
+
 def create_json(data_dict, pth):
     """Saves the data found in the data_dict dictionary into a
         JSON file whose name is specified by pth.
@@ -473,11 +450,10 @@ def create_json(data_dict, pth):
     with open(pth, 'w') as json_file:
         json.dump(data_dict, json_file, indent=4)
 
-# ----------------------------------------------------------------------------
-#    Please put your answers for the last question here:
-# ----------------------------------------------------------------------------
+#function
+    
     """
-                    ***** Step 10 – Open Ended Questions *****
+                    ***** Some Notes *****
 
 
 
@@ -575,17 +551,8 @@ fact that trading in the short term can be predicted by the content of the artic
 available information. 
 
     """
+# Test functions: The purpose of these functions is to help you test the functions above. 
 
-# ----------------------------------------------------------------------------
-#   Test functions:
-#   The purpose of these functions is to help you test the functions above as
-#   you write them.
-#   IMPORTANT:
-#   - These functions are optional, you do not have to use them
-#   - These functions do not count as part of your assessment (they will not
-#     be marked)
-#   - You can modify these functions as you wish, or delete them altogether.
-# ----------------------------------------------------------------------------
 def _test_get_tics():
     """ Test function for the `get_tics` function. Will print the tickers as
     returned by the `get_tics` function.
@@ -661,7 +628,7 @@ def _test_create_json(json_pth):
 
 
 # ----------------------------------------------------------------------------
-#  Uncomment the statements below to call the test and/or main functions.
+#  The statements below  are to to call the test and/or main functions.
 # ----------------------------------------------------------------------------
 if __name__ == "__main__":
     # Test functions
