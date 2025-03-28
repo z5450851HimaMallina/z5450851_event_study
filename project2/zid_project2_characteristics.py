@@ -6,11 +6,8 @@
 # Part 5.1: import needed modules
 # ----------------------------------------------------------------------------
 # Create import statements to import all modules you need in this script
-# Note: please keep the aliases consistent throughout the project.
+
 #       For details, review the import statements in zid_project2_main.py
-
-# <COMPLETE THIS PART>
-
 
 # ----------------------------------------------------------------------------------------
 # Part 5.3: read the vol_input_sanity_check function
@@ -146,7 +143,7 @@ def vol_cal(ret, cha_name, ret_freq_use: list):
 
     """
 
-    # <COMPLETE THIS PART>
+    
 
 
 # ----------------------------------------------------------------------------
@@ -219,7 +216,7 @@ def merge_tables(ret, df_cha, cha_name):
        ensuring that modifications to the copied DataFrame do not affect the original DataFrame stored in the dictionary
      - Read shift() documentations to understand how to shift the values of a DataFrame along a specified axis
     """
-    # <COMPLETE THIS PART>
+    
 
 
 # ------------------------------------------------------------------------------------
@@ -269,7 +266,7 @@ def cha_main(ret, cha_name, ret_freq_use: list):
         The function assumes that `vol_input_sanity_check`, `vol_cal`, and `merge_tables` are defined elsewhere
         in the module with appropriate logic to handle the inputs and outputs as described.
     """
-    # <COMPLETE THIS PART>
+    
 
 
 def _test_ret_dict_gen():
