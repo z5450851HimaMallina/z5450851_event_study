@@ -48,7 +48,7 @@ the line and continue up to and including the 14th character in that line.
 The data for the next column begins immediately after the 14th character,
 with the 15th character in the line.
 
-For your specific DAT files, you have the following information:
+For specific DAT files, there's following information:
 
 Column Name:
     column position : The order of this column in the file starting with 1. 
