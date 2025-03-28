@@ -6,10 +6,10 @@
 # Part 4.1: import needed modules
 # ----------------------------------------------------------------------------
 # Create import statements to import all modules you need in this script
-# Note: please keep the aliases consistent throughout the project.
-#       For details, review the import statements in zid_project2_main.py
 
-# <COMPLETE THIS PART>
+# For details, review the import statements in zid_project2_main.py
+
+
 
 import pandas as pd
 import os
@@ -24,7 +24,7 @@ from project2 import util
 
 
 # ----------------------------------------------------------------------------
-# Part 4.2: Complete the read_prc_csv function
+# Part 4.2:  the read_prc_csv function
 # ----------------------------------------------------------------------------
 def read_prc_csv(tic, start, end, prc_col='Adj Close'):
     """ This function extracts and returns a Pandas Series of adjusted close prices
@@ -108,7 +108,7 @@ def read_prc_csv(tic, start, end, prc_col='Adj Close'):
 
     """
 
-    # <COMPLETE THIS PART>
+   
 
     # Construct the file name with the path to the 'data' directory
     file_name = os.path.join(os.path.dirname(__file__), 'data', f"{tic.lower()}_prc.csv")
@@ -135,7 +135,7 @@ def read_prc_csv(tic, start, end, prc_col='Adj Close'):
 
 
 # ----------------------------------------------------------------------------
-# Part 4.3: Complete the daily_return_cal function
+# Part 4.3:  daily_return_cal function
 # ----------------------------------------------------------------------------
 def daily_return_cal(prc):
     """ Create a pandas series containing daily returns for an individual stock,
@@ -219,7 +219,7 @@ def daily_return_cal(prc):
      - Ensure that the returns do not contain any entries with null values.
 
     """
-    # <COMPLETE THIS PART>
+    
     # Calculate daily returns using the pct_change method
     daily_returns = prc.pct_change().dropna()
 
@@ -229,9 +229,8 @@ def daily_return_cal(prc):
     return daily_returns
 
 
-# ----------------------------------------------------------------------------
-# Part 4.4: Complete the monthly_return_cal function
-# ----------------------------------------------------------------------------
+# Part 4.4 monthly_return_cal function
+
 def monthly_return_cal(prc):
     """ Create a pandas series containing monthly returns for an individual stock,
     given a Pandas series with daily prices and datetime-formatted index.
@@ -329,7 +328,7 @@ def monthly_return_cal(prc):
      - Ensure that the returns do not contain any entries with null values.
 
     """
-    # <COMPLETE THIS PART>
+   
     # Ensure the prices are sorted by date
     prc = prc.sort_index()
 
@@ -360,9 +359,8 @@ def monthly_return_cal(prc):
     return monthly_returns
 
 
-# ----------------------------------------------------------------------------
-# Part 4.5: Complete the aj_ret_dict function
-# ----------------------------------------------------------------------------
+# Part 4.5 aj_ret_dict function 
+
 def aj_ret_dict(tickers, start, end):
     """ Create a dictionary with two items, each containing a dataframe
     of daily and monthly returns for all stocks listed in `tickers`.
@@ -470,7 +468,7 @@ def aj_ret_dict(tickers, start, end):
         memory usage: 24.0 bytes
         ----------------------------------------
     """
-    # <COMPLETE THIS PART>
+    # 
     daily_returns = {}
     monthly_returns = {}
 
