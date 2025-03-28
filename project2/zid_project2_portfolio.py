@@ -2,10 +2,7 @@
 
 """
 
-# ------------------------------------------------------------------------------------------------------------------
-# Part 6: read and utilize portfolio construction functions in
-#         zid_project2_portfolio.py to answer the questions in Part 7
-# ------------------------------------------------------------------------------------------------------------------
+
 
 from project2 import zid_project2_etl as etl
 from project2 import zid_project2_characteristics as cha
