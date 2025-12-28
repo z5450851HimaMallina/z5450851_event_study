@@ -70,10 +70,6 @@ The project enables users to:
 - Financial data aggregation
 - Comparative stock performance studies
 
-## Limitations
-- Requires consistently formatted input files
-- Depends on the specific structure of the input data files
-
 
 ## PROJECT 2
 # Stock Volatility Portfolio Analysis 
