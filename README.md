@@ -70,7 +70,7 @@ The project enables users to:
 
 
 ## PROJECT 2
-# Stock Volatility Portfolio Analysis 📈
+# Stock Volatility Portfolio Analysis 
 
 ## Project Overview
 
@@ -141,7 +141,7 @@ project2/
 - Hypothesis Testing
 - Performance Metrics Computation
 
-## 🌟 Skills Developed
+## Skills Developed
 
 - Advanced Python Programming
 - Financial Data Engineering
