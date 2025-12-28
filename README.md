@@ -1,14 +1,20 @@
-## Project-1 & Project-2
+## Project Objective
+
+Financial analysis rarely begins with clean, unified datasets. Instead, analysts often face fragmented data spread across multiple sources, formats, and structures especially when working with stock price information across different exchanges and time periods.The objective of this project is to design and implement a scalable, and portable Python-based data pipeline that systematically ingests, validates, cleans, and consolidates stock price data from multiple sources into a single structured output. By automating the process of reading ticker metadata, extracting individual price files, verifying data integrity, and merging records into a unified JSON format, this project mirrors real-world financial data engineering challenges. It demonstrates how thoughtful data validation and modular design can transform raw, fragmented market data into an analysis-ready dataset.
+
+This project is valuable because it:
+- Addresses a core pain point in financial analytics: inconsistent and distributed data sources
+- Emphasizes data quality, validation, and reproducibility, which are critical in finance
+- Builds a flexible foundation that can be extended for downstream tasks such as time-series analysis, portfolio comparison, or predictive modeling
+
+Ultimately, this project showcases how disciplined data engineering practices enable reliable financial insights turning messy market data into meaningful, usable information.
 ### Project-1: Combining Data from Multiple Sources
 Finance data often requires assembling datasets from various sources especially when dealing with stock prices.
 
 <img width="520" alt="image" src="https://github.com/user-attachments/assets/4af33ff0-e882-4384-a59b-a13c30cd0ffb" />
 
 
-## Project Overview
-This project is designed to help combine stock price information from multiple sources by creating a robust and flexible data acquisition, cleaning, and merging pipeline in Python.
-
-## Project Structure
+## Project-1 Structure
 ```
 project1/
 │
